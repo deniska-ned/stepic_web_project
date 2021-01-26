@@ -2,5 +2,8 @@ To setup server run this
 
 ```bash
 git clone https://github.com/deniska-ned/stepic_web_project.git web
-sh /home/box/web/init.sh
+
+cd web
+git checkout task_1.9.1
+sh init.sh
 ```
