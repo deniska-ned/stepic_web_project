@@ -8,7 +8,7 @@ NGINX_CONF_FILE_NEW=/home/box/web/etc/nginx.conf
 # WSGI configuration
 
 mkdir -p log
-gunicorn -b 0.0.0.0:8080 etc.hello:wsgi_application >> log/gunicorn.log 2>&1 &
+gunicorn -b 0.0.0.0:8080 hello:wsgi_application >> log/gunicorn.log 2>&1 &
 
 # Nginx configuration
 
