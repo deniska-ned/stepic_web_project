@@ -1,4 +1,7 @@
 from django.http import HttpResponse
 
 def test(request, *args, **kwargs):
-    return HttpResponse('OK')
+    body = 'OK'
+    if 'q_num' in kwargs:
+        body += '; question number:  ' + kwargs['q_num']
+    return HttpResponse(body)
