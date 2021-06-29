@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'qa',
 ]
 
 MIDDLEWARE = [
@@ -78,7 +79,6 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'stepic_web_db',
         'USER': 'me',
-        'PASSWORD': 'password',
     }
 }
 

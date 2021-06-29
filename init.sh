@@ -6,7 +6,7 @@
 sudo /etc/init.d/mysql start
 
 mysql -u root -e "CREATE DATABASE stepic_web_db;"
-mysql -u root -e "CREATE USER me IDENTIFIED BY 'password';"
+mysql -u root -e "CREATE USER me;"
 mysql -u root -e "GRANT ALL PRIVILEGES ON * . * TO 'me'@'localhost';"
 
 
